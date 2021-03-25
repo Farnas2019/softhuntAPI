@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <%= spost.postT%>
+  <h1><%=spost.likes.length%></h1>
+  <%spost.comments.forEach(function(post){%>
+    <h4><% post.postedBy%></h4>
+    <p><%= post.message%></p>
+ <% })%>
+<form action="/like/<%=spost._id%>?_method=PUT" method="POST">
+    <button type="submit">Like</button>
+</form>
+<form action="/unlike/<%=spost._id%>?_method=PUT" method="POST">
+    <button type="submit">UnLike</button>
+</form>
+<form action="/comment/<%=spost._id%>" method="POST">
+    <textarea name="message" id="" cols="30" rows="10"></textarea>
+    <button type="submit">Comment</button>
+</form>
+</body>
+</html>
