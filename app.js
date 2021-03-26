@@ -15,7 +15,7 @@ const   express   =     require("express"),
         
        
 
-var dbUrl = "mongodb://localhost:27017/i4gc";
+var dbUrl = "mongodb+srv://ice669:07066944154@cluster0.oghz8.mongodb.net/i4g?retryWrites=true&w=majority";
 mongoose.connect(dbUrl, {useNewUrlParser: true, useUnifiedTopology:true, useCreateIndex: true}).then(function(reqult){
     console.log("Connected With Db");
 }).catch(function(err){
@@ -160,7 +160,9 @@ app.get("/logout", function(req,res){
     req.logout();
     res.redirect("/login")
 });
-if(app.listen(3000)){
+
+const PORT = process.env.PORT || 3000;
+if(app.listen(PORT)){
     console.log("listening");
 }else{
     console.log("I Can't Listen oo");
