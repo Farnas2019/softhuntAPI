@@ -25,9 +25,14 @@
     "sequelize": "^6.3.5",
     "sqlite3": "^5.0.0"
   },
+  "engines": {
+    "node":"12.17.0"
+  },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set NODE_ENV=development && node app.js",
+    "start-prod": "set NODE_ENV=production && node app.js"
   },
   "author": "Farhan Nasiruddeen",
   "license": "ISC",
