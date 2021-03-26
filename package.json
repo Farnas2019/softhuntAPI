@@ -1,0 +1,47 @@
+{
+  "name": "softhunt",
+  "version": "1.0.0",
+  "description": "This is for the i4g ccommunity challenge",
+  "main": "app.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "formidable": "^1.2.2",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.9",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.0.1",
+    "passport-twitter": "^1.0.4",
+    "passport-google": "^0.3.0",
+    "passport-google-oauth2": "^0.2.0",
+    "passport-facebook": "^3.0.0",
+    "passport-github": "^1.1.0",
+    "sequelize": "^6.3.5",
+    "sqlite3": "^5.0.0"
+  },
+  "engines": {
+    "node":"12.17.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set NODE_ENV=development && node app.js",
+    "start-prod": "set NODE_ENV=production && node app.js"
+  },
+  "author": "Farhan Nasiruddeen",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Farnas2019/softhuntAPI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Farnas2019/softhuntAPI/issues"
+  },
+  "homepage": "https://github.com/Farnas2019/softhuntAPI#readme"
+}
